@@ -1,0 +1,80 @@
+# 🧭 Agility Trial Course Dimensions (Real-World vs Game Translation)
+
+This document outlines the real-world standards for agility trial course dimensions and how they can be translated into a hex-based tile grid for gameplay in AlacritySim.
+
+---
+
+## 📏 Real-World Standard Course Dimensions
+
+| Organization | Standard Ring Size | Notes |
+|--------------|---------------------|-------|
+| **AKC**      | **100 ft x 100 ft** max (30.5 x 30.5 m)  <br />**50 ft x 70 ft** min (15.2 x 21.3 m) | Depends on venue size |
+| **USDAA**    | **100 ft x 100 ft** standard  <br />**70 ft x 120 ft** also used | Prefers large fields |
+| **UKI**      | **30 m x 30 m** (98.4 ft x 98.4 ft) | Metric standard |
+| **FCI**      | **20 m x 40 m** (65.6 ft x 131 ft) | International norm |
+
+> ✅ The most common "default" ring is **100 ft x 100 ft**, or **minimum 50 ft x 70 ft**.
+
+---
+
+## 🔢 Real Course Details
+
+- **Obstacles per course**: 12–20  
+- **Obstacle spacing**: 18–22 ft apart (approx. 6–7 meters)
+- **Course difficulty** is influenced by:
+  - Obstacle layout and sequence
+  - Angle and tightness of turns
+  - Reversals or crossbacks
+
+---
+
+## 🕹️ Hex Grid Translation
+
+### 🔸 Assumptions:
+- **1 hex tile ≈ 3 ft** (approximate footprint of dog stride & obstacle width)
+
+### 🔸 Grid Size Estimates:
+| Real-World Area       | Approx Tile Grid |
+|-----------------------|------------------|
+| 50 ft x 70 ft         | 16 x 23 tiles    |
+| 100 ft x 100 ft       | 33 x 33 tiles    |
+| Balanced play area    | 20–25 tiles per side |
+
+---
+
+## 🧠 Game-Friendly Grid Design Guidelines
+
+- Recommended **standard course size**: 24 x 24 hex grid  
+- Keep **obstacle spacing** at ~6–7 tiles apart
+- Obstacle tile usage:
+  - **Jumps**: 1 tile
+  - **Tunnels**: 2+ tiles (curved or straight)
+  - **Weave poles**: 6+ tiles in a line
+- Provide at least **3+ tiles of space** between most obstacles
+
+---
+
+## 🔧 Special Zones to Include
+
+| Zone              | Purpose                         | Tile Size Suggestion |
+|-------------------|----------------------------------|----------------------|
+| **Start Zone**    | Dog placement + lead-out area    | 3x2 or 3x3 tiles      |
+| **Finish Area**   | Visual end of course             | 2–3 tiles wide        |
+| **Out-of-Bounds** | Decorative or penalty space      | Optional border       |
+| **Rest Zone**     | UI / handler spawn               | Optional side area    |
+
+---
+
+## ✅ Summary Table
+
+| Feature                     | Real-World Equivalent     | Game Implementation          |
+|-----------------------------|----------------------------|------------------------------|
+| Course Size (standard)      | ~100 ft x 100 ft           | 30x30 hex grid (approx.)     |
+| Course Size (small)         | ~50 ft x 70 ft             | 16x23 hex grid               |
+| Obstacle Spacing            | 18–22 ft                   | 6–7 hex tiles                |
+| Obstacles per Course        | 12–20                      | 12–20 tiles                  |
+| Start + Finish Lines        | Fixed plane or cones       | Marked tile rows or zones    |
+
+---
+
+This structure supports realistic pathing, strategic dog handling, and player planning, while remaining performant and readable in a browser UI.
