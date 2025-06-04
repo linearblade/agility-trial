@@ -12,39 +12,25 @@ module.exports = {
       type: 'category',
       label: 'Rules',
       items: [
-        'rules/synopsis',
-        'rules/game-phases',
-        'rules/dog-behavior',
-        'rules/course-dimensions',
+        'rules/project-synopsis',
+        'rules/trial-phase-structure',
+        'rules/dog-behavior-model',
+        'rules/field-dimensions',
       ],
     },
     {
       type: 'category',
       label: 'Obstacles',
       items: [
-        'obstacles/obstacles',
+        'obstacles/official-obstacles',
       ],
-    },
-    {
-      type: 'doc',
-      id: 'tree',
-      label: 'Course Map Tree',
-    },
-    {
-      type: 'category',
-      label: 'Legacy',
-      items: [],
-    },
-    {
-      type: 'category',
-      label: 'Titles',
-      items: [],
     },
     {
       type: 'category',
       label: 'Meta',
       items: [
         'meta/ai-assistant',
+        'meta/glossary',
       ],
     },
   ],
